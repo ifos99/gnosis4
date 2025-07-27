@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects We Tutor - Gnosis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #252b54;
+      line-height: 1.6;
+    }
+
+    /* Header Navigation */
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Placeholder logo left */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+     
+      height: 40px;
+    }
+
+    .logo span {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #252b54;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #252b54;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    /* Orange underline effect */
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -6px;
+      left: 0;
+      background-color: #f56c00;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+      width: 100%;
+    }
+
+    /* Section */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .title-row h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .oran {
+      color: #f56c00;
+    }
+
+    .blue {
+      color: #252b54;
+    }
+
+    .box-section {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      flex: 1 1 300px;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .box:nth-child(1) {
+      background-color: #fff4ec;
+    }
+
+    .box:nth-child(2) {
+      background-color: #f2f3fa;
+    }
+
+    .box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .box ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .box ul li {
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grade-label {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .pricing-header {
+      text-align: left;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pricing-header h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      position: relative;
+    }
+
+    /* Vertical divider line */
+    .price-row::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      background-color: #ccc;
+    }
+
+    .price-box {
+      flex: 1 1 45%;
+      text-align: left;
+      padding: 0 1rem;
+    }
+
+    .price-box h4 {
+      color: #f56c00;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-box p {
+      font-size: 0.95rem;
+    }
+    /* Hide divider line on small screens */
+    @media (max-width: 768px) {
+      .box-section, .price-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .price-row::before {
+        display: none;
+      }
+      .title-row {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="logo">
+      <img src="files/image/neccessary/logo.png" alt="Gnosis Logo" loading="lazy" />
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="g.home.html" >HOME</a></li>
+        <li><a href="g.about us.html">ABOUT US</a></li>
+        <li><a href="https://forms.gle/KUKsqTcUa5k8xAnq7">REGISTER</a></li>
+         <li><a href="g subjects page.html" class="active">SUBJECTS</a></li>
+        <li><a href="g. guidelines.html">GUIDELINES</a></li>
+        <li><a href="g.contact us.html">CONTACT US</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Title Section -->
+  <section class="section">
+    <div class="title-row">
+      <h1 style="text-align: right;"><span class="oran">SUBJECTS</span> <span class="blue">WE TUTOR</span><img src="files\image\neccessary\apple.png" alt="" width="80"></h1> <h6><img src="files\image\neccessary\casstle.png" style="align-items: right;" width="250" height="200"></h6>
+      
+    </div>
+    
+    <p style="text-align: left">
+        At Gnosis Online Tutoring, we offer personalized academic support across a wide range of subjects.<br>
+         Our tutoring services are organized into two main areas:</p><br>
+
+    <!-- Subjects Boxes -->
+    <div class="box-section">
+      <div class="box">
+        <h3><span class="blue">NATURAL SCIENCE</span> <span class="oran">SUBJECTS</span></h3>
+        <ul>
+          <li>MATHEMATICS</li>
+          <li>PHYSICS</li>
+          <li>CHEMISTRY</li>
+          <li>BIOLOGY</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3><span class="blue">SOCIAL SCIENCE</span> <span class="oran">SUBJECTS</span></h3>
+        <ul>
+          <li>MATHEMATICS</li>
+          <li>ECONOMICS</li>
+          <li>GEOGRAPHY</li>
+          <li>HISTORY</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grade-label">
+      <span class="oran"></span> <span class="blue"></span>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="pricing-header">
+      <h2><span class="blue">OUR PRICE</span></h2>
+      <img src="files\image\neccessary\priceicon.png" alt="Price Icon" width="30">
+    </div>
+    <div class="price-row">
+      <div class="price-box">
+        <h4>FOR GRADE 9-10</h4><br>
+        <p><b>Single Package (Natural or Social Subjects):</b><br><br>
+<b>3,000</b> Birr per month<br>
+Includes:<br>
+✓ 20 hours of live study sessions per month (3 days/week)<br>
+✓ Weekly practice questions<br>
+✓ Monthly progress report<br>
+✓ Monthly test<br>
+✓ Custom short notes<br><br>
+Effective Rate: 150 Birr/hour (66% lower than the typical tutoring price)<br><br>
+<b>Both Natural and Social Packages:</b><br><br>
+<b>5,000</b> Birr per month<br>
+Includes:<br>
+✓ 7 subjects<br>
+✓ 20 hours of live study sessions per month (3 days/week)<br>
+✓ Weekly practice questions<br>
+✓ Monthly progress report<br>
+✓ Monthly test<br>
+✓ Custom short notes<br><br>
+Effective Rate: 250 Birr/hour(66% lower than the typical tutoring price)</p>
+      </div>
+      <div class="price-box">
+        <h4>FOR GRADE 11-12</h4><br>
+        <p><b>Single Package (Natural or Social Subjects):</b><br><br>
+<b>3,000</b> Birr per month<br>
+Includes:<br>
+✓ 20 hours of live study sessions per month (3 days/week)<br>
+✓ Weekly practice questions<br>
+✓ Monthly progress report<br>
+✓ Monthly test<br>
+✓ Custom short notes<br><br>
+Effective Rate: 150 Birr/hour (66% lower than the typical tutoring price)</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

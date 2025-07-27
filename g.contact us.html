@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1a1a3b;
+      background: white;
+    }
+
+    /* ===== HEADER NAVBAR (like first pages) ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .logo {
+      font-weight: bold;
+      width: 40px;
+
+    }
+.logo img {
+      width: 140px;
+      }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1a1a3b;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 3px;
+    }
+
+    nav ul li a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: orange;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      padding: 50px 80px;
+      position: relative;
+    }
+
+    .contact-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .tutor {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #e0e0e0;
+      margin-right: 20px;
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    /* ===== REGISTER BUTTON (gradient style) ===== */
+    .register-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: linear-gradient(to right, #1a1a3b, #3a3a6b);
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 50px;
+      right: 80px;
+    }
+
+    /* ===== CONTACT FOOTER (bottom dark section) ===== */
+    .contact-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a1a3b;
+      padding: 40px 80px;
+      color: white;
+      margin-top: 50px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 20px;
+      background: orange;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .contact-image img {
+      border-radius: 10px;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo img"><img src="files/image/neccessary/logo.png" alt="Gnosis Logo" loading="lazy" />
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="g.home.html">Home</a></li>
+        <li><a href="g.about us.html">About Us</a></li>
+        <li><a href="https://forms.gle/KUKsqTcUa5k8xAnq7">Register</a></li>
+         <li><a href="g subjects page.html">SUBJECTS</a></li>
+        <li><a href="g. guidelines.html">GUIDELINES</a></li>
+       
+
+        <li><a href="g.contact us.html" class="active">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h2> OUR TUTORS</h2>
+<p>Our tutors are talented, high-achieving recent high-school graduates who excelled in their studies and understand how to explain concepts clearly, motivate students, <br>
+    and prepare them for exams. They bring fresh, effective learning strategies and a friendly, professional approach.<br>
+     Additionally, they know the learning system of the school environments which helps others to tackle their academic problems.</p>
+    <div class="tutor">
+      
+      <div>
+        
+      <div>
+        <h3 class="dark orange">FREE TRIAL</h3>
+        <p>If you’d like, you  can get a free 2  or 1 week learning experience to see how it feels to be part of us. </p>
+      <br> <h4 style="text-align: left;" class="dark blue"> Thank you for your interest in Gnosis Online Tutoring!</h4>
+     <br> <h4 style="text-align: left;" class="dark blue"> We believe you will join us soon!</h4>
+    </div>
+    
+   
+       
+        
+   
+    <!-- REGISTER BUTTON -->
+    <a href="https://forms.gle/KUKsqTcUa5k8xAnq7" class="register-btn">REGISTER</a>
+  </section>
+  <!-- CONTACT DETAILS AT BOTTOM -->
+  <footer class="contact-footer">
+    <div class="contact-info">
+      <h2>Contact us</h2>
+      <p><strong>PHONE</strong><br>+251943207946</p><br>
+      <p><strong>TELEGRAM</strong><br>@hailisha1112</p><br>
+      <p><strong>EMAIL</strong><br>knosisonlinetutoring@gmail.com</p><br>
+      <a href="g.home.html" class="home-btn">Home</a> <a href="g.about us.html" class="home-btn">About us</a> <a href="https://forms.gle/KUKsqTcUa5k8xAnq7" class="home-btn">Register</a>
+    </div>
+
+    <div class="contact-image">
+      <img src="files/image/neccessary/aboutusimage.png" alt="Online tutoring illustration">
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1c1c1c;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav ul li a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #ff7b00;
+      border-radius: 2px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #1c1c4d;
+    }
+
+    .box {
+      background-color: #f3f3f3;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .section-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .text {
+      flex: 1 1 300px;
+    }
+
+    .image {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Specific color boxes */
+    .light-blue {
+      background-color: #e7ecf8;
+    }
+
+    .peach {
+      background-color: #fef1ea;
+    }
+
+    @media (max-width: 768px) {
+      .section-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text, .image {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="files/image/neccessary/logo.png" alt="Gnosis Logo" loading="lazy" />
+      <h2 style="color:#004aad; font-weight:800;"></h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="g.home.html">HOME</a></li>
+        <li><a href="g.about us.html" class="active">ABOUT US</a></li>
+        <li><a href="https://forms.gle/KUKsqTcUa5k8xAnq7">REGISTER</a></li>
+         <li><a href="g subjects page.html">SUBJECTS</a></li>
+        <li><a href="g. guidelines.html">GUIDELINES</a></li>
+        <li><a href="g.contact us.html">CONTACT US</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT US SECTION -->
+    <section class="section">
+      <h2>ABOUT US<img src="files\image\neccessary\aboutus.png" alt="About Us Image Placeholder" width="70" height="70"/></h2>
+      <div class="section-content">
+        <div class="text box light-blue">
+          <p>Gnosis Online Tutoring is a virtual learning center led by top high-achieving high school graduates.
+             We are dedicated to helping students build confidence, master difficult subjects, and achieve 
+             their dream grades through structured, engaging lessons..</p>
+        </div>
+        <div class="image">
+          <img src="files\image\neccessary\aboutusimage.png" alt="About Us Image Placeholder" width="200" height="150"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE OFFER SECTION -->
+    <section class="section">
+      <h2 style="text-align: right;"><img src="files\image\neccessary\offer2.png"  width="70" height="70"/> WHAT WE OFFER  </h2>
+      <div class="section-content">
+        <div class="image">
+          <img src="files\image\neccessary\offerimage.png" alt="About Us Image Placeholder" width="400" height="300"/>
+        </div>
+        <div class="text box peach">
+          <p>
+✔ Live, interactive Zoom classes (2 days/week, 2 hours/day)<br>
+✔ Custom notes and practice questions based on each student’s curriculum<br>
+✔ Monthly progress reports<br>
+✔ Special packages to match different goals and schedules<br>
+✔ Small group sessions (maximum of 5 students) for individual attention</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PRICE SECTION -->
+    <section class="section">
+      <h2>OUR PRICE <img src="files\image\neccessary\priceicon.png"  width="50" height="50"/></h2>
+      <div class="section-content">
+<div class="text box light-blue">
+          <p>Our pricing is about 66% lower than standard high school tutoring services:<br><br>
+- 150 Birr/hour for one package (includes 4 subjects, weekly practice questions, progress reports, and monthly tests)<br>
+- 250 Birr/hour for both packages (includes 7 subjects, weekly practice questions, progress reports, and monthly tests).</p>
+        </div>
+        <div class="image">
+          <img src="files\image\neccessary\priceimage.png"  width="300" height="200"/>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+</body>
+</html>
